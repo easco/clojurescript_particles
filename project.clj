@@ -12,7 +12,8 @@
                  [hiccups "0.3.0"]]
 
   :plugins [[lein-figwheel "0.5.20"]
-            [lein-cljsbuild "1.1.7" :exclusions [[org.clojure/clojure]]]]
+            [lein-cljsbuild "1.1.7" :exclusions [[org.clojure/clojure]]]
+            [lein-cljfmt "0.7.0"]]
 
   :source-paths ["src"]
 

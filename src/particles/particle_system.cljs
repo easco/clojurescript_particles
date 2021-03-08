@@ -11,20 +11,18 @@
   (map (fn [p] (update p :dy (partial + 10))) particle-list))
 
 (defn step-particles [particle-list]
-    (map particle/step particle-list ))
+  (map particle/step particle-list))
 
 (defn remove-dead [particle-list]
   (filter particle/is-alive? particle-list))
 
 (defn spawn-new [particle-list]
   (let [new-particles (make-n-particles (- 100 (count particle-list)))]
-    (concat particle-list new-particles)
-  ))
+    (concat particle-list new-particles)))
 
 (defn step [particle-system]
   (-> particle-system
       (update :particles step-particles)
       (update :particles remove-dead)
       (update :particles apply-gravity)
-      (update :particles spawn-new)
-    ))
+      (update :particles spawn-new)))
