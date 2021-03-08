@@ -14,3 +14,4 @@ pom.xml
 .repl
 .nrepl-port
 yarn-error.log
+node_modules
