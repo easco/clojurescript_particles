@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "rxjs": "^6.6.6",
+    "rxjs-compat": "^6.6.6",
+    "ws": "^7.4.4"
+  }
+}
